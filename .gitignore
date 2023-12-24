@@ -1,17 +1,47 @@
-# Default ignored files
-/shelf/
-/.idea/workspace.xml
-# Editor-based HTTP Client requests
-/httpRequests/
-# Datasource local storage ignored files
-/dataSources/
-/dataSources.local.xml
+# use glob syntax.
+syntax: glob
+*.ser
+*.class
+*~
+*.bak
+#*.off
+*.old
+*.log
+# eclipse conf file
+.settings**
+.classpath
+.factorypath
+.project
+.manager
+.scala_dependencies
 
 # idea
 .idea
-.idea/**
+.idea*
 *.iml
 
 # building
 /redis-*/target/
 *DS_Store*
+
+build
+null
+tmp*
+temp
+dist
+test-output
+build.log
+
+# other scm
+.svn
+.CVS
+.hg*
+
+# switch to regexp syntax.
+#  syntax: regexp
+#  ^\.pc/
+
+#SHITTY output not in target directory
+build.log
+.vscode
+.vscode/*
